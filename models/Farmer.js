@@ -6,7 +6,7 @@ let schema = new Schema(
     {
         name:{type:String, required:true},
         email:{type:String},
-        mobileno:{type:String, required:true},
+        mobileno:{type:String, required:true,  unique: true},
         landspace:{type:String, required:true},
         password:{type:String, required:true}
     }

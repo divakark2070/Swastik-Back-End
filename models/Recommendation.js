@@ -3,9 +3,9 @@ let Schema = mongoose.Schema;
 
 let schema = new Schema(
     {
-        adminid:{type:String, required:true},
-        cropid:{type:String, required:true},
-        rdate:{type:String, required:true},
+        farmerid:{type:Schema.Types.ObjectId, ref:"farmers"},
+        cropid:{type:Schema.Types.ObjectId, ref:"crops"},
+        rdate:{type:Date, required:true},
         dose:{type:String, required:true},
         space:{type:String, required:true},
         drip:{type:String, required:true},

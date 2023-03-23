@@ -3,7 +3,7 @@ let Schema = mongoose.Schema;
 
 let schema = new Schema(
     {
-        name:{type:String, required:true},
+        name:{type:String, required:true,  unique: true},
     }
 )
 
